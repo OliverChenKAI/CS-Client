@@ -1,0 +1,421 @@
+<HTML>
+    <HEAD>
+
+    <TITLE></TITLE>
+    <STYLE type = 'text/css'>
+        
+        html, body {
+                width: 100vw;  /* Ensure it takes up the full viewport width */
+                overflow-x: hidden;  /* Disable horizontal scrolling */
+            }
+        #grad {
+                position:absolute;
+                background-image: linear-gradient(135deg, rgb(0, 51, 141), rgb(212, 52, 41));
+                left:-1%;
+                z-index:-1;
+                -webkit-box-reflect: below;
+            }
+        #Intro_word{
+                position:absolute;
+                font-family: 'Tahoma';
+                font-size:100px;
+                color:white;
+        }
+        #main_pic{
+                position:absolute;
+                left:55%;
+                top:25%;
+                width:33%;
+                border-radius: 10%;
+        }
+        #smallbox{
+                position:absolute;
+                left:97%;
+                top:-1%;
+                width: 3%;
+                height:101%;
+                border: black solid 3px;
+                z-index:1;
+                opacity:0;
+        }
+        #more{
+                position:absolute;
+                left: 97.3%;
+                top: 45%;
+                rotate: 90deg;
+                font-family: 'Tahoma';
+                font-size:20px;
+                z-index:1;
+                color:white;
+        }
+        #box{
+                position:absolute;
+                left:101%;
+                top:-1%;
+                width: 101%;
+                height:101%;
+                background-image: linear-gradient(135deg, rgb(0, 51, 141), rgb(212, 52, 41));
+
+                -webkit-transition: all 1800ms ease;
+                -moz-transition: all 1800ms ease;
+                -ms-transition: all 1800ms ease;
+                -o-transition: all 1800ms ease;
+                transition: all 1800ms ease;
+        }
+        #textinbox{
+                position:absolute;
+                left:15%;
+                color:white;
+                font-family: 'Tahoma';
+                font-size:70px;
+                z-index:1;
+                -webkit-transition: all 1800ms ease;
+                -moz-transition: all 1800ms ease;
+                -ms-transition: all 1800ms ease;
+                -o-transition: all 1800ms ease;
+                transition: all 1800ms ease;
+        }
+        a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+        }
+        a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+        }
+        a:hover {
+                color: white;
+                background-color: transparent;
+                text-decoration: underline;
+        }
+        a:active {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+        }
+        #Title{
+                position:absolute;
+                font-family: 'Tahoma';
+                font-size:60px;
+                color:white;
+        }
+        #boxfortext{
+                position:absolute;
+                
+
+        }
+        #smalltext{
+                position:absolute;
+                font-family: 'Tahoma';
+                font-size:30px;
+                color:white;
+        }
+        #boxonbot{
+            position:absolute;
+            text-align: justify;
+            width:65%;
+            height:20%;
+
+        }
+        #image{
+            position:absolute;
+            width:24%;    
+            border-radius: 25px;
+        }
+        
+        #image:hover{
+            opacity:0.9;
+        }
+
+        #p1{
+            position:absolute;
+            width:52%;    
+            border-radius: 25px;   
+        }
+        #gradu{
+            position:absolute;
+            width:23%;       
+        }
+        #application{
+            position:absolute;
+            width:21%;       
+        }
+        #cc{
+            position:absolute;
+            width:20%;       
+        }
+        #black1{
+            position:absolute;
+            width:24%;   
+            height:27.8%;
+            background-color: black;
+            opacity:0;
+            top:327.9%;
+            left:14.4%;
+            border-radius: 25px;
+            z-index:1;
+        }
+        #black2{
+            position:absolute;
+            width:24%;   
+            height:28%;
+            background-color: black;
+            opacity:0;
+            top:327.9%;
+            left:61.3%;
+            border-radius: 25px;
+            z-index:1;
+        }
+        #black3{
+            position:absolute;
+            width:24%;   
+            height:27.8%;
+            background-color: black;
+            opacity:0;
+            top:365%;
+            left:14.4%;
+            border-radius: 25px;
+            z-index:1;
+        }
+        #black4{
+            position:absolute;
+            width:24%;   
+            height:27.8%;
+            background-color: black;
+            opacity:0;
+            top:365%;
+            left:61.3%;
+            border-radius: 25px;
+            z-index:1; 
+        }
+
+        #button1{
+                position:absolute;
+                width: 200px;
+                height: 90px;
+                border-radius: 100px/90px;
+                background: black;
+                z-index:1;
+                opacity:0;
+        }      
+        #rectangle1{
+                position:absolute;
+                width: 185px;
+                height: 35px;
+                z-index:1;
+                font-family: 'Tahoma';
+                font-size:25px;
+                left:8%;
+                top:30%;
+                font-weight: bold;
+                opacity:0;
+        }
+        #button2{
+                position:absolute;
+                width: 200px;
+                height: 90px;
+                border-radius: 100px/90px;
+                background: black;
+                z-index:1;
+                opacity:0;
+        }      
+        #rectangle2{
+                position:absolute;
+                width: 185px;
+                height: 35px;
+                z-index:1;
+                font-family: 'Tahoma';
+                font-size:25px;
+                left:8%;
+                top:30%;
+                font-weight: bold;
+                opacity:0;
+        }
+        #button3{
+                position:absolute;
+                width: 200px;
+                height: 90px;
+                border-radius: 100px/90px;
+                background: black;
+                z-index:1;
+                opacity:0;
+        }      
+        #rectangle3{
+                position:absolute;
+                width: 185px;
+                height: 35px;
+                z-index:1;
+                font-family: 'Tahoma';
+                font-size:25px;
+                left:8%;
+                top:30%;
+                font-weight: bold;
+                opacity:0;
+        }
+        #button4{
+                position:absolute;
+                width: 200px;
+                height: 90px;
+                border-radius: 100px/90px;
+                background: black;
+                z-index:1;
+                opacity:0;
+        }      
+        #rectangle4{
+                position:absolute;
+                width: 185px;
+                height: 35px;
+                z-index:1;
+                font-family: 'Tahoma';
+                font-size:25px;
+                left:8%;
+                top:30%;
+                font-weight: bold;
+                opacity:0;
+        }
+        #footer{
+                position:absolute;
+                
+                width:101%;
+                height:36%;
+                top:401%;
+                left:1%;
+        }
+        #text{
+                position:absolute;
+                font-family:Tahoma;
+                font-size:21px;
+                color:white;
+        }
+
+    </STYLE>
+    <SCRIPT>
+        var more_click = 0;
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+        <DIV id = 'grad' style = 'top:-1%;left:-1%;width:121%; height:219.5%;'></DIV>
+        
+        <P id = 'Intro_word' style = 'top:15%; left:15%;'>Community</P>
+        <P id = 'Intro_word' style = 'top : 30%; left: 27%;'>Service</P>
+        <P id = 'Intro_word' style = 'top : 47%; left: 39%;'>Club</P>
+        <IMG src = 'main_pic.png' id = 'main_pic'></IMG>
+        <DIV id = 'smallbox'></DIV>
+        <P id = 'more' onclick = "
+        if(more_click%2 == 0){
+            document.getElementById('box').style.left = '-1%';
+            more_click +=1;
+        }
+        else{
+            document.getElementById('box').style.left = '101%';
+            more_click +=1;
+        }">more</P>
+
+        <DIV id = 'box'>
+            <P id = 'textinbox' style = 'top:15%;'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/redcross.html">Red Cross</a></P>
+            <P id = 'textinbox' style = 'top:25%;'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/fooddonation.html">Food Donation</a></P>
+            <P id = 'textinbox' style = 'top:35%;'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/charityart.html">Charity Art</a></P>
+            <P id = 'textinbox' style = 'top:45%;'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/zonta.html">Zonta</a></P></DIV>
+
+        <P id = 'TITLE' style = 'top:101%; left:23.4%;letter-spacing: 1.5px;'>What Is Community Service Club</P>
+        <DIV id = 'boxfortext' style = 'top:116%; left:24.8%;width:50%;height:20%;text-align: justify;'><P id = 'smalltext' style = 'top:1%; left:1%;font-size:25px;letter-spacing: 2px;line-height: 1.3;'>Community Service Clubs are clubs that gives students chance to contribute to the community and gets service hours in return.  The Four Community Service clubs in KAS include Red Cross, Food Donation, Charity Art, and Zonta.  Each of them is special, they help different parts of the community, so people who needs finanically or other aids will get help.</P></DIV>
+        <DIV id = 'boxonbot' style = 'top: 176%'></DIV>
+        <IMG src = 'p1.png' id = 'p1' style = 'top:142%; left:24%;'></iMG>
+
+        <P id = 'TITLE' style = 'top:203%; left:32.8%;letter-spacing: 2px;'>Why Should You Join</P>
+        <DIV id = 'boxfortext' style = 'top:226%; left:15.1%;width:14%;height:12%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:-1%;font-size:40px;'>Graduation Requirement</P></DIV>
+        <IMG src = 'grad.png' id = 'gradu' style = 'top:238%;left:10.5%;'></IMG>
+        <DIV id = 'boxfortext' style = 'top:226%; left:43.2%;width:14%;height:12%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:-1%;font-size:40px;'>College Application</P></DIV>
+        <IMG src = 'application.png' id = 'application' style = 'top:238%;left:39.2%;'></IMG>
+        <DIV id = 'boxfortext' style = 'top:226%; left:71%;width:14%;height:12%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:-1%;font-size:40px;'>Community Contribution</P></DIV>
+        <IMG src = 'cc.png' id = 'cc' style = 'top:238%;left:68%;'></IMG>
+        <DIV id = 'boxonbot' style = 'top: 280%'></DIV>
+
+
+
+
+
+
+        <P id = 'TITLE' style = 'top:299%; left:38.4%;'>KAS Service Clubs</P>
+        <DIV id = 'boxfortext' style= 'top:319%; left:20%;width:12%;height:7%;text-align: center;'><P id = 'smalltext' style = 'top:-41%; left:8%;font-size:40px;'>Red Cross</P></DIV>
+        <DIV id = 'black1' onmouseover = "document.getElementById('button1').style.opacity = '1';
+        document.getElementById('rectangle1').style.opacity = '1';document.getElementById('black1').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button1').style.opacity = '0';
+        document.getElementById('rectangle1').style.opacity = '0';document.getElementById('black1').style.opacity = '0';"></DIV>
+        <DIV id = 'button1' style = 'top:337.5%; left:20.5%;'onmouseover = "document.getElementById('button1').style.opacity = '1';
+        document.getElementById('rectangle1').style.opacity = '1';document.getElementById('black1').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button1').style.opacity = '0';
+        document.getElementById('rectangle1').style.opacity = '0';document.getElementById('black1').style.opacity = '0';"><DIV id = 'rectangle1'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/redcross.html">Find out more</a></DIV></DIV>
+        <IMG src = 'rc.png' id = 'image' style = 'top:328%; left:14.4%;'></IMG>
+
+
+        <DIV id = 'boxfortext' style = 'top:319%; left:65%;width:17%;height:7%;text-align: center;'><P id = 'smalltext' style = 'top:-41%; left:5%;font-size:40px;'>Food Donation</P></DIV>
+        <DIV id = 'black2' onmouseover = "document.getElementById('button2').style.opacity = '1';
+        document.getElementById('rectangle2').style.opacity = '1';document.getElementById('black2').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button2').style.opacity = '0';
+        document.getElementById('rectangle2').style.opacity = '0';
+        document.getElementById('black2').style.opacity = '0';"></DIV>
+        <DIV id = 'button2' style = 'top:338%; left:67.5%;' onmouseover = "document.getElementById('button2').style.opacity = '1';
+        document.getElementById('rectangle2').style.opacity = '1';document.getElementById('black2').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button2').style.opacity = '0';
+        document.getElementById('rectangle2').style.opacity = '0';document.getElementById('black2').style.opacity = '0';">
+        <DIV id = 'rectangle2'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/fooddonation.html">Find out more</a></DIV></DIV>
+        <IMG src = 'fd.png' id = 'image' style = 'top:328%; left:61.3%;'></IMG>
+        
+        <DIV id = 'boxfortext' style = 'top:356%; left:19.7%;width:13%;height:7%;text-align: center;'><P id = 'smalltext' style = 'top:-41%; left:5%;font-size:40px;'>Charity Art</P></DIV>
+        <DIV id = 'black3' onmouseover = "document.getElementById('button3').style.opacity = '1';
+        document.getElementById('rectangle3').style.opacity = '1';document.getElementById('black3').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button3').style.opacity = '0';
+        document.getElementById('rectangle3').style.opacity = '0';
+        document.getElementById('black3').style.opacity = '0';"></DIV>
+        <DIV id = 'button3' style = 'top:373.5%; left:20.5%;' onmouseover = "document.getElementById('button3').style.opacity = '1';
+        document.getElementById('rectangle3').style.opacity = '1';document.getElementById('black3').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button3').style.opacity = '0';
+        document.getElementById('rectangle3').style.opacity = '0';document.getElementById('black3').style.opacity = '0';"><DIV id = 'rectangle3'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/charityart.html">Find out more</a></DIV></DIV>
+        <IMG src = 'ca.png' id = 'image' style = 'top:365%; left:14.4%;'></IMG>
+        
+
+        <DIV id = 'boxfortext' style = 'top:356%; left:70%;width:7%;height:7%;text-align: center;'><P id = 'smalltext' style = 'top:-41%; left:5%;font-size:40px;'>Zonta</P></DIV>
+        <DIV id = 'black4' onmouseover = "document.getElementById('button4').style.opacity = '1';
+        document.getElementById('rectangle4').style.opacity = '1';document.getElementById('black4').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button4').style.opacity = '0';
+        document.getElementById('rectangle4').style.opacity = '0';
+        document.getElementById('black4').style.opacity = '0';"></DIV>
+        <DIV id = 'button4' style = 'top:373%; left:67.5%;' onmouseover = "document.getElementById('button4').style.opacity = '1';
+        document.getElementById('rectangle4').style.opacity = '1';document.getElementById('black4').style.opacity = '0.5';"
+        onmouseout = "document.getElementById('button4').style.opacity = '0';
+        document.getElementById('rectangle4').style.opacity = '0';document.getElementById('black4').style.opacity = '0';"><DIV id = 'rectangle4'><a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/zonta.html">Find out more</a></DIV></DIV>
+        <IMG src = 'zt.png' id = 'image' style = 'top:365%; left:61.3%;'></IMG>
+        
+
+
+        <DIV id = 'boxonbot' style = 'top: 380%'></DIV>
+
+        <DIV id = 'footer'>
+                <a href = "https://www.kas.tw/"><IMG src = 'KAS.webp' style = 'width:9%; position:absolute; top:24%;left:10%;'></IMG></a>
+                <P id = 'text' style = 'left:21%;top:15%;'><B>Kaohsing American School</B></P>
+                <P id = 'text' style = 'left:21%;top:28%;'>889 Cueihua Road | Zuoying District</P>
+                <P id = 'text' style = 'left:21%;top:41%;'>Kaohsiung City 81354</P>
+                <P id = 'text' style = 'left:21%;top:54%;'>Taiwan</P>
+
+                <P id = 'text' style = 'left:46%;top:15%;'><B>Contact</B></P>
+                <P id = 'text' style = 'left:46%;top:28%;'>Tel: +886 7 586 3300</P>
+                <P id = 'text' style = 'left:46%;top:41%;'>Email: info@kas.tw</P>
+                <P id = 'text' style = 'left:46%;top:54%;'>Transcripts:</P>
+                <P id = 'text' style = 'left:46%;top:67%;'>transcripts@kas.tw</P>
+
+                <P id = 'text' style = 'left:68%;top:15%;'><B>Useful Links</B></P>
+                <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/redcross.html" id = 'text' style = 'left:68%;top:33%;'>Red Cross</a>
+                <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/fooddonation.html" id = 'text' style = 'left:68%;top:47%;'>Food Donation</a>
+                <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/charityart.html" id = 'text' style = 'left:68%;top:61%;'>Charity Art</a>
+                <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/zonta.html" id = 'text' style = 'left:68%;top:75%;'>Zonta</a>
+        </DIV>
+        
+ 
+        
+    </BODY>
+</HTML>
+
+
