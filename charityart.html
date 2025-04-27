@@ -1,0 +1,644 @@
+<HTML>
+    <HEAD>
+        <TITLE></TITLE>
+        <STYLE type = 'text/css'>
+            html, body {
+                width: 100vw;  /* Ensure it takes up the full viewport width */
+                overflow-x: hidden;  /* Disable horizontal scrolling */
+            }
+            #grad {
+                position:absolute;
+                background-image: linear-gradient(135deg, rgb(205, 152, 93),rgb(235, 182, 119),rgb(246, 191, 183),rgb(255, 209, 199));
+                left:-1%;
+                z-index:-1;
+                -webkit-box-reflect: below;
+            }
+            #Intro_word{
+                color:white;
+                position:absolute;
+                font-family: 'Georgia';
+                font-size:100px;
+            }
+            #logo{
+                position:absolute;
+                width:25%;
+                top:19%;
+                left:58%;
+            }
+            #boxonbot{
+                position:absolute;
+                text-align: justify;
+                width:65%;
+                height:20%;
+
+            }
+            #Title{
+                color:white;
+                position:absolute;
+                font-family: 'Georgia';
+                font-size:60px;
+            }
+            #boxfortext{
+                    position:absolute;
+
+            }
+            #smalltext{
+                    position:absolute;
+                    font-family: 'Georgia';
+                    font-size:30px;
+                    color:white;
+            }
+            #pic{
+                position:absolute;
+                width:20%;
+                border-radius: 5%;
+            }
+            #pic1{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: 13%;
+                    opacity:1;
+            }
+            #pic2{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%;
+                    left: 32%;
+                    opacity:1;
+            }
+            #pic3{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: 51%;
+                    opacity:1;
+            }
+            #pic4{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: 70%;
+                    opacity:1;
+            }
+            #pic5{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: 89%;
+                    opacity:0;
+            }
+            #pic6{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: 89%;
+                    opacity:0;
+            }
+            #pic7{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: 89%;
+                    opacity:0;
+            }
+            #pic8{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: -6%;
+                    opacity:0;
+            }
+            #pic9{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: -6%;
+                    opacity:0;
+            }
+            #pic10{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: -6%;
+                    opacity:0;
+            }
+            #pic11{
+                    position:absolute;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:330%; 
+                    left: -6%;
+                    opacity:0;
+            }
+            #triangle{
+                position:absolute;
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-right: 100px solid black;
+                border-bottom: 50px solid transparent;
+            }
+
+            body {                     /*timer*/
+                font-family: Arial, sans-serif;   
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            #timer {
+                font-size: 3rem;
+                font-weight: bold;
+                position:absolute;
+                top:306%;
+                opacity:0;
+            }
+
+            #smallbox{
+                position:absolute;
+                top:323.5%;
+                left:22%;
+                width:14%;
+                height:5%;
+                border: 5px solid black;
+            }
+            #boxfora{
+                position:absolute;
+                top:228%;
+                left:21%;
+                width:59%;
+                height:60%;
+                border:5px solid white;
+                overflow-y: scroll;
+            }
+            #box2{
+                position:absolute;
+                border: 5px solid white;
+            }
+            #text{
+                position:absolute;
+                color:white;
+            }
+            #p{
+                position:absolute;
+                width:98%;
+            }
+            #text1{
+                position:absolute;
+                font-family:Tahoma;
+                font-size:41px;
+                color:white;
+                top:90%;
+            }
+            #text2{
+                position:absolute;
+                font-family:Tahoma;
+                font-size:41px;
+                color:white;
+                top:102%;
+            }
+            #text3{
+                position:absolute;
+                font-family:Tahoma;
+                font-size:41px;
+                color:white;
+                top:114%;
+            }
+            #footer{
+                position:absolute;
+                
+                width:101%;
+                height:36%;
+                top:405%;
+                left:1%;
+            }
+            #text4{
+                    position:absolute;
+                    font-family:Tahoma;
+                    font-size:21px;
+                    color:white;
+            }
+        </STYLE>
+        <SCRIPT>
+            var change = 0;
+        </SCRIPT>
+    </HEAD>
+    <BODY>
+        <DIV id = 'grad' style = 'top:-1%;left:-1%;width:101%; height:225%;'></DIV>
+        <IMG src = 'calogo.png' id = 'logo'></IMG>
+        <div id="timer">3</div>
+        <P id = 'Intro_word' style = 'left:17%; top: 25%;'>Charity Art</P>
+        <DIV id = 'boxonbot' style = 'top: 80%'></DIV>
+        <P id = 'TITLE' style = 'top:105%; left:38%;'>What Is Special</P>
+
+        <DIV id = 'boxfortext' style = 'top:129%; left:10.3%;width:22%;height:19%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:2%;font-size:40px;'>Make Art Works For Fund Raising</P></DIV>
+        <DIV id = 'boxfortext' style = 'top:127.6%; left:41.7%;width:16%;height:12%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:2%;font-size:40px;'>Invite Artists For Speech</P></DIV>
+        <DIV id = 'boxfortext' style = 'top:128%; left:69.9%;width:17%;height:9%;text-align: center;'><P id = 'smalltext' style = 'top:-35%; left:2%;font-size:40px;'>Making Decorations</P></DIV>
+        <IMG src = 'ca1.png' id = 'pic'style = 'top:140%;left:68.5%;'></IMG>
+        <IMG src = 'ca2.png' id = 'pic'style = 'top:140%;left:11.5%;'></IMG>
+        <IMG src = 'ca3.png' id = 'pic'style = 'top:140%;left:40%;'></IMG>
+        <DIV id = 'boxonbot' style = 'top: 180%'></DIV>
+
+        <P id = 'TITLE' style = 'top:207%; left:35%;'>Upcoming Activites</P>
+
+        <DIV id = 'boxfora'>
+            <DIV id = 'box2' style = 'width:51%;height:41%;top:-1%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Plate Glazing</P>
+                <P id = 'text' style = 'top:38%; left:5%;font-size:25px;'>Time: Thurs/Fri 2024/9/12-27</P>
+                <P id = 'text' style = 'top:58%; left:5%;font-size:25px;'>Location: Art Classroom</P>
+            </DIV>
+            <IMG src = 'plate.png' style = 'position:absolute;width:48%;top:0%;left:52%'></IMG>
+    
+            <DIV id = 'box2' style = 'width:51%;height:41%;top:41%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Jazz Szu-Ying Chen Workshop</P>
+                <P id = 'text' style = 'top:38%; left:5%;font-size:25px;'>Time: 2024/10/15   3:30 PM - 4:30 PM</P>
+                <P id = 'text' style = 'top:58%; left:5%;font-size:25px;'>Location: Ms. Kao's (Room 331)</P>
+            </DIV>
+            <IMG src = 'artist.png' style = 'position:absolute;width:48%;top:41.9%;left:52%'></IMG>
+    
+    
+            <DIV id = 'box2' style = 'width:51%;height:41%;top:83%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Fall Festival</P>
+                <P id = 'text' style = 'top:47%; left:5%;font-size:25px;'>Time: 2024/11/10 10:00AM - 2:00PM</P>
+                <P id = 'text' style = 'top:67%; left:5%;font-size:25px;'>Location: Kaohsing American School</P>
+            </DIV>
+            <IMG src = 'ff.png' style = 'position:absolute;width:48%;top:83.5%;left:52%'></IMG>
+            
+            <DIV id = 'box2' style = 'width:51%;height:41%;top:125%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Zuoxin Library Decoration</P>
+                <P id = 'text' style = 'top:46%; left:5%;font-size:25px;'>Time: 2024/12/15   9:30 AM - 4:30 PM</P>
+                <P id = 'text' style = 'top:66%; left:5%;font-size:25px;'>Location: Zuoxin Library</P>
+            </DIV>
+            <IMG src = 'library.png' style = 'width:48%;position:absolute;top:125%;left:52%'></IMG>
+        </DIV>
+
+
+        <P id = 'TITLE' style = 'top:307%; left:43%;'>Executive</P>
+
+        <DIV id = 'pic1'><IMG src = 'ruby.png' id = 'p'></IMG><P id = 'text1' style = 'left:35%'>Ruby</P><P id = 'text2' style = 'left:23%;'>President</P></DIV>
+        <DIV id = 'pic2'><IMG src = 'Beryl.png' id = 'p'></IMG><P id = 'text1'style = 'left:33%'>Beryl</P><P id = 'text2' style = 'left:8%;'>Vice President</P></DIV>
+        <DIV id = 'pic3'><IMG src = 'chloe.png' id = 'p'></IMG><P id = 'text1' style = 'left:32%'>Chloe</P><P id = 'text2' style = 'left:1%;'>Head Of Design</P></IMG></DIV>
+        <DIV id = 'pic4'><IMG src = 'olivia.png' id = 'p'></IMG><P id = 'text1' style = 'left:30%'>Olivia</P><P id = 'text2' style = 'left:1%;'>Head Of Design</P></IMG></DIV>
+        <DIV id = 'pic5'><IMG src = 'Angelina.png' id = 'p'></IMG><P id = 'text1' style = 'left:22%'>Angelina</P><P id = 'text2' style = 'left:28%;'>Public</P><P id = 'text3' style = 'left:24%;'>Relation</P></DIV>
+        <DIV id = 'pic6'><IMG src = 'Dennan.png' id = 'p'></IMG><P id = 'text1' style = 'left:25%'>Dennan</P><P id = 'text2' style = 'left:26%;'>Activity</P><P id = 'text3' style = 'left:14%;'>Coordinator</P></DIV>
+        <DIV id = 'pic7'><IMG src = 'Sydnee.png' id = 'p'></IMG><P id = 'text1' style = 'left:26%'>Sydnee</P><P id = 'text2' style = 'left:26%;'>Activity</P><P id = 'text3' style = 'left:14%;'>Coordinator</P></DIV>
+        <DIV id = 'pic8'><IMG src = 'miley.png' id = 'p'></IMG><P id = 'text1' style = 'left:33%'>Miley</P><P id = 'text2' style = 'left:23%;'>President</P><P id = 'text3' style = 'left:20%;'>Candidate</P></DIV>
+        <DIV id = 'pic9'><IMG src = 'amber.png' id = 'p'></IMG><P id = 'text1' style = 'left:32%'>Amber</P><P id = 'text2' style = 'left:8%;'>Vice President</P><P id = 'text3' style = 'left:20%;'>Candidate</P></DIV>
+        <DIV id = 'pic10'><IMG src = 'Jamie.png' id = 'p'><P id = 'text1' style = 'left:34%'>Jamie</P><P id = 'text2' style = 'left:12%;'>Social Media</P></DIV>
+        <DIV id = 'pic11'><IMG src = 'clifford3.png' id = 'p'><P id = 'text1' style = 'left:28%'>Clifford</P><P id = 'text2' style = 'left:12%;'>Photographer</P></DIV>
+        
+        <SCRIPT>    
+            function moveleft(){
+                change+=1;
+                if(change == 11){
+                    change = 0;
+                }
+                if(change == 0){
+                    document.getElementById('pic11').style.opacity = '0';
+                    document.getElementById('pic11').style.left = '-6%';
+                    document.getElementById('pic1').style.left = '13%';
+                    document.getElementById('pic2').style.left = '32%';
+                    document.getElementById('pic3').style.left = '51%';
+                    document.getElementById('pic4').style.left = '70%';
+                    document.getElementById('pic4').style.opacity = '1';
+                    document.getElementById('pic5').style.left = '89%';
+                    document.getElementById('pic6').style.left = '89%';
+                    document.getElementById('pic7').style.left = '89%';
+                    document.getElementById('pic8').style.left = '-6%';
+                    document.getElementById('pic9').style.left = '-6%';
+                    document.getElementById('pic10').style.left = '-6%';
+                }
+                else if (change == 1){
+                    document.getElementById('pic1').style.opacity = '0';
+                    document.getElementById('pic1').style.left = '-6%';
+                    document.getElementById('pic2').style.left = '13%';
+                    document.getElementById('pic3').style.left = '32%';
+                    document.getElementById('pic4').style.left = '51%';
+                    document.getElementById('pic5').style.opacity = '1';
+                    document.getElementById('pic5').style.left = '70%';
+                    document.getElementById('pic8').style.left = '89%';
+                }
+                else if (change == 2){
+                    document.getElementById('pic2').style.opacity = '0';
+                    document.getElementById('pic2').style.left = '-6%';
+                    document.getElementById('pic3').style.left = '13%';
+                    document.getElementById('pic4').style.left = '32%';
+                    document.getElementById('pic5').style.left = '51%';
+                    document.getElementById('pic6').style.opacity = '1';
+                    document.getElementById('pic6').style.left = '70%';
+        
+
+                    document.getElementById('pic9').style.left = '89%';
+
+                }
+                else if (change == 3){
+                    document.getElementById('pic3').style.opacity = '0';
+                    document.getElementById('pic3').style.left = '-6%';
+                    document.getElementById('pic4').style.left = '13%';
+                    document.getElementById('pic5').style.left = '32%';
+                    document.getElementById('pic6').style.left = '51%';
+                    document.getElementById('pic7').style.opacity = '1';
+                    document.getElementById('pic7').style.left = '70%';
+                    document.getElementById('pic10').style.left = '89%';
+                    document.getElementById('pic2').style.left = '-6%';
+                }
+                else if (change == 4){
+                    document.getElementById('pic4').style.opacity = '0';
+                    document.getElementById('pic4').style.left = '-6%';
+                    document.getElementById('pic5').style.left = '13%';
+                    document.getElementById('pic6').style.left = '32%';
+                    document.getElementById('pic7').style.left = '51%';
+                    document.getElementById('pic8').style.opacity = '1';
+                    document.getElementById('pic8').style.left = '70%';
+                    document.getElementById('pic11').style.left = '89%';
+                }
+                else if (change == 5){
+                    document.getElementById('pic5').style.opacity = '0';
+                    document.getElementById('pic5').style.left = '-6%';
+                    document.getElementById('pic6').style.left = '13%';
+                    document.getElementById('pic7').style.left = '32%';
+                    document.getElementById('pic8').style.left = '51%';
+                    document.getElementById('pic9').style.opacity = '1';
+                    document.getElementById('pic9').style.left = '70%';
+                    document.getElementById('pic1').style.left = '89%';
+                }
+                else if (change == 6){
+                    document.getElementById('pic6').style.opacity = '0';
+                    document.getElementById('pic6').style.left = '-6%';
+                    document.getElementById('pic7').style.left = '13%';
+                    document.getElementById('pic8').style.left = '32%';
+                    document.getElementById('pic9').style.left = '51%';
+                    document.getElementById('pic10').style.opacity = '1';
+                    document.getElementById('pic10').style.left = '70%';
+                    document.getElementById('pic2').style.left = '89%';
+                }
+                else if (change == 7){
+                    document.getElementById('pic7').style.opacity = '0';
+                    document.getElementById('pic7').style.left = '-6%';
+                    document.getElementById('pic8').style.left = '13%';
+                    document.getElementById('pic9').style.left = '32%';
+                    document.getElementById('pic10').style.left = '51%';
+                    document.getElementById('pic11').style.opacity = '1';
+                    document.getElementById('pic11').style.left = '70%';
+                    document.getElementById('pic3').style.left = '89%';
+                }
+                else if (change == 8){
+                    document.getElementById('pic8').style.opacity = '0';
+                    document.getElementById('pic8').style.left = '-6%';
+                    document.getElementById('pic9').style.left = '13%';
+                    document.getElementById('pic10').style.left = '32%';
+                    document.getElementById('pic11').style.left = '51%';
+                    document.getElementById('pic1').style.opacity = '1';
+                    document.getElementById('pic1').style.left = '70%';
+                    document.getElementById('pic4').style.left = '89%';
+                }
+                else if (change == 9){
+                    document.getElementById('pic9').style.opacity = '0';
+                    document.getElementById('pic9').style.left = '-6%';
+                    document.getElementById('pic10').style.left = '13%';
+                    document.getElementById('pic11').style.left = '32%';
+                    document.getElementById('pic1').style.left = '51%';
+                    document.getElementById('pic2').style.opacity = '1';
+                    document.getElementById('pic2').style.left = '70%';
+                    document.getElementById('pic5').style.left = '89%';
+                    document.getElementById('pic8').style.left = '-6%';
+                }
+                else if (change == 10){
+                    document.getElementById('pic10').style.opacity = '0';
+                    document.getElementById('pic10').style.left = '-6%';
+                    document.getElementById('pic11').style.left = '13%';
+                    document.getElementById('pic1').style.left = '32%';
+                    document.getElementById('pic2').style.left = '51%';
+                    document.getElementById('pic3').style.opacity = '1';
+                    document.getElementById('pic3').style.left = '70%';
+                    document.getElementById('pic6').style.left = '89%';
+                }
+            }
+    
+            let timeLeft = 3; // Countdown from 3 seconds
+            const timerElement = document.getElementById("timer");
+
+            function countdown() {
+                if (timeLeft > 1) {
+                    timeLeft--;
+                    timerElement.textContent = timeLeft;
+                }
+
+                else{
+                    moveleft();
+                    timeLeft = 3; // Reset time
+                    timerElement.textContent = timeLeft;
+                }
+            }
+            const timer = setInterval(countdown, 1000);
+
+            
+    </SCRIPT>
+    <DIV id = 'triangle' style = 'rotate:180deg; top:342.5%;left:91%' onclick = "
+    moveleft();timeLeft = 3; timerElement.textContent = timeLeft;
+    "></DIV>
+    <DIV id = 'triangle' style = 'top:342.5%;left:4%' onclick = "change -=1; timeLeft = 3; timerElement.textContent = timeLeft;
+    if(change == -1){
+        change =10;
+    }
+    if(change == 10){
+        document.getElementById('pic11').style.left = '13%';
+        document.getElementById('pic11').style.opacity = '1';
+        document.getElementById('pic1').style.left = '32%';
+        document.getElementById('pic2').style.left = '51%';
+        document.getElementById('pic3').style.left = '70%';
+        document.getElementById('pic4').style.left = '89%';
+        document.getElementById('pic4').style.opacity = '0';
+        document.getElementById('pic5').style.left = '89%';
+        document.getElementById('pic6').style.left = '89%';
+        document.getElementById('pic7').style.left = '-6%';
+        document.getElementById('pic8').style.left = '-6%';
+        document.getElementById('pic9').style.left = '-6%';
+        document.getElementById('pic10').style.left = '-6%';
+    }
+    else if (change == 9){
+        document.getElementById('pic10').style.opacity = '1';
+        document.getElementById('pic10').style.left = '13%';
+        document.getElementById('pic11').style.left = '32%';
+        document.getElementById('pic1').style.left = '51%';
+        document.getElementById('pic2').style.left = '70%';
+        document.getElementById('pic3').style.left = '89%';
+        document.getElementById('pic3').style.opacity = '0';
+        document.getElementById('pic6').style.left = '-6%';
+    }
+    else if (change == 8){
+        document.getElementById('pic9').style.opacity = '1';
+        document.getElementById('pic9').style.left = '13%';
+        document.getElementById('pic10').style.left = '32%';
+        document.getElementById('pic11').style.left = '51%';
+        document.getElementById('pic1').style.left = '70%';
+        document.getElementById('pic2').style.left = '89%';
+        document.getElementById('pic2').style.opacity = '0';
+        document.getElementById('pic3').style.left = '89%';
+        document.getElementById('pic5').style.left = '-6%';
+    }
+    else if (change == 7){
+        document.getElementById('pic8').style.opacity = '1';
+        document.getElementById('pic8').style.left = '13%';
+        document.getElementById('pic9').style.left = '32%';
+        document.getElementById('pic10').style.left = '51%';
+        document.getElementById('pic11').style.left = '70%';
+        document.getElementById('pic1').style.left = '89%';
+        document.getElementById('pic1').style.opacity = '0';
+        document.getElementById('pic2').style.left = '89%';
+        document.getElementById('pic4').style.left = '-6%';
+    }
+    else if (change == 6){
+        document.getElementById('pic7').style.opacity = '1';
+        document.getElementById('pic7').style.left = '13%';
+        document.getElementById('pic8').style.left = '32%';
+        document.getElementById('pic9').style.left = '51%';
+        document.getElementById('pic10').style.left = '70%';
+        document.getElementById('pic11').style.left = '89%';
+        document.getElementById('pic11').style.opacity = '0';
+        document.getElementById('pic3').style.left = '-6%';
+    }
+    else if (change == 5){
+        document.getElementById('pic6').style.opacity = '1';
+        document.getElementById('pic6').style.left = '13%';
+        document.getElementById('pic7').style.left = '32%';
+        document.getElementById('pic8').style.left = '51%';
+        document.getElementById('pic9').style.left = '70%';
+        document.getElementById('pic10').style.left = '89%';
+        document.getElementById('pic10').style.opacity = '0';
+        document.getElementById('pic2').style.left = '-6%';
+    }
+    else if (change == 4){
+        document.getElementById('pic5').style.opacity = '1';
+        document.getElementById('pic5').style.left = '13%';
+        document.getElementById('pic6').style.left = '32%';
+        document.getElementById('pic7').style.left = '51%';
+        document.getElementById('pic8').style.left = '70%';
+        document.getElementById('pic9').style.left = '89%';
+        document.getElementById('pic9').style.opacity = '0';
+        document.getElementById('pic1').style.left = '-6%';
+    }
+    else if (change == 3){
+        document.getElementById('pic4').style.opacity = '1';
+        document.getElementById('pic4').style.left = '13%';
+        document.getElementById('pic5').style.left = '32%';
+        document.getElementById('pic6').style.left = '51%';
+        document.getElementById('pic7').style.left = '70%';
+        document.getElementById('pic8').style.left = '89%';
+        document.getElementById('pic8').style.opacity = '0';
+        document.getElementById('pic11').style.left = '-6%';
+    }
+    else if (change == 2){
+        document.getElementById('pic3').style.opacity = '1';
+        document.getElementById('pic3').style.left = '13%';
+        document.getElementById('pic4').style.left = '32%';
+        document.getElementById('pic5').style.left = '51%';
+        document.getElementById('pic6').style.left = '70%';
+        document.getElementById('pic7').style.left = '89%';
+        document.getElementById('pic7').style.opacity = '0';
+        document.getElementById('pic10').style.left = '-6%';
+    }
+    else if (change == 1){
+        document.getElementById('pic2').style.opacity = '1';
+        document.getElementById('pic2').style.left = '13%';
+        document.getElementById('pic3').style.left = '32%';
+        document.getElementById('pic4').style.left = '51%';
+        document.getElementById('pic5').style.left = '70%';
+        document.getElementById('pic6').style.left = '89%';
+        document.getElementById('pic6').style.opacity = '0';
+        document.getElementById('pic9').style.left = '-6%';
+    }
+    if(change == 0){
+        document.getElementById('pic1').style.opacity = '1';
+        document.getElementById('pic1').style.left = '13%';
+        document.getElementById('pic2').style.left = '32%';
+        document.getElementById('pic3').style.left = '51%';
+        document.getElementById('pic4').style.left = '70%';
+        document.getElementById('pic5').style.left = '89%';
+        document.getElementById('pic5').style.opacity = '0';
+        document.getElementById('pic8').style.left = '-6%';
+    }
+
+    "></DIV>
+    <DIV id = 'footer'>
+        <a href = "https://www.kas.tw/"><IMG src = 'KAS.webp' style = 'width:9%; position:absolute; top:24%;left:10%;'></IMG></a>
+        <P id = 'text4' style = 'left:21%;top:15%;'><B>Kaohsing American School</B></P>
+        <P id = 'text4' style = 'left:21%;top:28%;'>889 Cueihua Road | Zuoying District</P>
+        <P id = 'text4' style = 'left:21%;top:41%;'>Kaohsiung City 81354</P>
+        <P id = 'text4' style = 'left:21%;top:54%;'>Taiwan</P>
+
+        <P id = 'text4' style = 'left:46%;top:15%;'><B>Contact</B></P>
+        <P id = 'text4' style = 'left:46%;top:28%;'>Tel: +886 7 586 3300</P>
+        <P id = 'text4' style = 'left:46%;top:41%;'>Email: info@kas.tw</P>
+        <P id = 'text4' style = 'left:46%;top:54%;'>Transcripts:</P>
+        <P id = 'text4' style = 'left:46%;top:67%;'>transcripts@kas.tw</P>
+
+        <P id = 'text4' style = 'left:68%;top:15%;'><B>Useful Links</B></P>
+        <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/redcross.html" id = 'text' style = 'left:68%;top:33%;'>Red Cross</a>
+        <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/fooddonation.html" id = 'text' style = 'left:68%;top:47%;'>Food Donation</a>
+        <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/charityart.html" id = 'text' style = 'left:68%;top:61%;'>Charity Art</a>
+        <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/zonta.html" id = 'text' style = 'left:68%;top:75%;'>Zonta</a>
+</DIV>
+    </BODY>
+</HTML>
