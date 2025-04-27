@@ -1,0 +1,372 @@
+<HTML>
+    <HEAD>
+        <TITLE></TITLE>
+        <STYLE type = 'text/css'>
+            html, body {
+                width: 100vw;  /* Ensure it takes up the full viewport width */
+                overflow-x: hidden;  /* Disable horizontal scrolling */
+            }
+
+            #grad {
+                position:absolute;
+                background-image: linear-gradient(135deg, rgb(188, 29, 30), rgb(255, 99, 99));
+            }
+            #triangle3{
+                position:absolute;
+                background-image: linear-gradient(135deg, rgb(188, 29, 30), rgb(255, 99, 99));
+                width: 0;
+                height: 0;
+                border-left: 1570px solid transparent;
+                border-right: 1570px solid transparent;
+                border-bottom: 1100px solid rgb(217, 61, 61);
+            }
+            #triangle4{
+                position:absolute;
+                background-image: linear-gradient(135deg, rgb(188, 29, 30), rgb(255, 99, 99));
+                width: 0;
+                height: 0;
+                border-left: 800px solid transparent;
+                border-right: 800px solid transparent;
+                border-bottom: 1135px solid rgb(217, 61, 61);
+            }
+  
+
+            #Intro_word{
+                position:absolute;
+                font-family: 'Annai MN';
+                font-size:100px;
+                color:white;
+        }
+            #boxonbot{
+                position:absolute;
+                text-align: justify;
+                width:65%;
+                height:20%;
+
+            }
+            #Title{
+                position:absolute;
+                font-family: 'Annai MN';
+                font-size:60px;
+                color:white;
+        }
+            #boxfortext{
+                    position:absolute;
+                    
+                    
+            }
+            #smalltext{
+                    position:absolute;
+                    font-family: 'Annai MN';
+                    font-size:30px;
+                    color:white;
+            }
+            #pic1{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%; 
+                    left: 13%;
+                    opacity:1;
+            }#pic2{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: 32%;
+                    opacity:1;
+            }
+            #pic3{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: 51%;
+                    opacity:1;
+            }
+            #pic4{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: 70%;
+                    opacity:1;
+            }
+            #pic5{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: 89%;
+                    opacity:0;
+            }
+            #pic6{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: 89%;
+                    opacity:0;
+            }
+            #pic7{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: 89%;
+                    opacity:0;
+            }
+            #pic8{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: -6%;
+                    opacity:0;
+            }
+            #pic9{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: -6%;
+                    opacity:0;
+            }
+            #pic10{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: -6%;
+                    opacity:0;
+            }
+            #pic11{
+                    position:absolute;
+                    border: 5px black solid;
+                    width: 17%;
+                    height: 37%;
+                    -webkit-transition: all 1000ms ease;
+                    -moz-transition: all 1000ms ease;
+                    -ms-transition: all 1000ms ease;
+                    -o-transition: all 1000ms ease;
+                    transition: all 1000ms ease;
+                    top:326%;
+                    left: -6%;
+                    opacity:0;
+            }
+            #triangle{
+                position:absolute;
+                width: 0;
+                height: 0;
+                border-top: 40px solid transparent;
+                border-right: 80px solid black;
+                border-bottom: 40px solid transparent;
+            }
+
+
+            body {                     /*timer*/
+                font-family: Arial, sans-serif;   
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            #timer {
+                font-size: 3rem;
+                font-weight: bold;
+                position:absolute;
+                top:306%;
+                opacity:0;
+            }
+            #logo{
+                position:absolute;
+                width:25%;
+                top:20%;
+                left:58%;
+                z-index:1;
+            }
+            #image{
+                position:absolute;
+                border-radius: 5%;
+            }
+
+            #boxfora{
+                position:absolute;
+                top:220%;
+                left:21%;
+                width:59%;
+                height:60%;
+                border:5px solid white;
+                overflow-y: scroll;
+            }
+            #box2{
+                position:absolute;
+                border: 5px solid white;
+            }
+            #text{
+                position:absolute;
+                color:white;
+            }
+            #footer{
+                position:absolute;
+                width:101%;
+                height:36%;
+                top:300%;
+                left:2%;
+            }
+            #text2{
+                    position:absolute;
+                    font-family:Tahoma;
+                    font-size:21px;
+                    color:white;
+            }
+            
+        </STYLE>
+        <SCRIPT>
+            var change = 0;
+
+
+        </SCRIPT>
+    </HEAD>
+    <BODY>
+        
+        <DIV id = 'grad' style = 'top:-30%;left:4%;rotate:55deg; width:60%; height:220%;'></DIV>
+        <DIV id = 'grad' style = 'top:124%;left:20.5%;rotate:145deg; width:90%; height:170%;'></DIV>
+        <DIV id = 'triangle3' style = 'top:233.6%;left:38.5%;'></DIV>
+        <DIV id = 'triangle4' style = 'top:230%;left:-27.7%;'></DIV>
+
+        <IMG src = 'logorc.png' id = 'logo'></IMG>
+        <P id = 'Intro_word' style = 'left:20%; top: 25%;'>Red Cross</P>
+        <DIV id = 'boxonbot' style = 'top: 80%'></DIV>
+
+
+        <P id = 'TITLE' style = 'top:99%; left:33%;'>Variety Of Activities</P>
+
+        <DIV id = 'boxfortext' style = 'top:121%; left:10.3%;width:20%;height:19%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:-1%;font-size:40px;'>International Red Cross Branch For Kaohsiung</P></DIV>
+        <DIV id = 'boxfortext' style = 'top:121%; left:40%;width:20%;height:19%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:-1%;font-size:40px;'>Learning how to CPR and Bandaging </P></DIV>
+        <DIV id = 'boxfortext' style = 'top:120%; left:72.5%;width:14%;height:12%;text-align: center;'><P id = 'smalltext' style = 'top:-21%; left:-1%;font-size:40px;'>Community Contribution</P></DIV>
+        <IMG src = 'rc1.png' id = 'image' style = 'top:141%;width:18%;left:11%;'>
+        <IMG src = 'rc2.png' id = 'image' style = 'top:141%;width:23%;left:68.2%;'>  
+            <IMG src = 'rc3.png' id = 'image' style = 'top:141%;width:19%;left:40.3%;'>  
+        
+        <DIV id = 'boxonbot' style = 'top: 180%'></DIV>
+
+        <P id = 'TITLE' style = 'top:199%; left:35%;'>Upcoming Activites</P>
+        <DIV id = 'boxonbot' style = 'top: 276%'></DIV>
+
+        <DIV id = 'boxfora'>
+        <DIV id = 'box2' style = 'width:51%;height:41%;top:-1%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Beach Cleaning</P>
+            <P id = 'text' style = 'top:38%; left:5%;font-size:25px;'>Time: 2024/10/19   9:00 AM - 12:00 PM</P>
+            <P id = 'text' style = 'top:58%; left:5%;font-size:25px;'>Location: Cijin Beach</P>
+        </DIV>
+        <IMG src = 'beach.png' style = 'position:absolute;width:48%;top:0%;left:52%'></IMG>
+
+        <DIV id = 'box2' style = 'width:51%;height:41%;top:41%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Bandaging Lesson</P>
+            <P id = 'text' style = 'top:38%; left:5%;font-size:25px;'>Time: 2024/12/12   3:30 PM - 4:30 PM</P>
+            <P id = 'text' style = 'top:58%; left:5%;font-size:25px;'>Location: Ms. Kao's (Room 331)</P>
+        </DIV>
+        <IMG src = 'bandaging.png' style = 'position:absolute;width:48%;top:41.9%;left:52%'></IMG>
+
+
+        <DIV id = 'box2' style = 'width:51%;height:41%;top:83%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Fund Raising</P>
+            <P id = 'text' style = 'top:38%; left:5%;font-size:25px;'>Time: 2025/2/11   3:30 PM - 4:30 PM</P>
+            <P id = 'text' style = 'top:58%; left:5%;font-size:25px;'>Location: Ms. Kao's (Room 331)</P>
+        </DIV>
+        <IMG src = 'packaging.png' style = 'position:absolute;width:48%;top:83.5%;left:52%'></IMG>
+        
+        <DIV id = 'box2' style = 'width:51%;height:41%;top:125%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>CPR Training</P>
+            <P id = 'text' style = 'top:38%; left:5%;font-size:25px;'>Time: 2025/2/23   9:00 AM - 1:00 PM</P>
+            <P id = 'text' style = 'top:58%; left:5%;font-size:25px;'>Location: School</P>
+        </DIV>
+        <IMG src = 'cpr.png' style = 'width:48%;position:absolute;top:125%;left:52%'></IMG>
+
+        <DIV id = 'box2' style = 'width:51%;height:41%;top:167%;'><P id = 'text' style = 'top:-5%; left:5%;font-size:45px;'>Disaster Preparedness</P>
+            <P id = 'text' style = 'top:38%; left:5%;font-size:25px;'>Time: 2025/3/30   9:00 AM - 4:00 PM</P>
+            <P id = 'text' style = 'top:58%; left:5%;font-size:25px;'>Location: 827高雄市彌陀區中正南路22號</P>
+        </DIV>
+        <IMG src = 'disaster.png' style = 'width:48%;position:absolute;top:167%;left:52%'></IMG>
+        </DIV>
+
+
+        <DIV id = 'footer'>
+            <a href = "https://www.kas.tw/"><IMG src = 'KAS.webp' style = 'width:9%; position:absolute; top:24%;left:10%;'></IMG></a>
+            <P id = 'text2' style = 'left:21%;top:15%;'><B>Kaohsing American School</B></P>
+            <P id = 'text2' style = 'left:21%;top:28%;'>889 Cueihua Road | Zuoying District</P>
+            <P id = 'text2' style = 'left:21%;top:41%;'>Kaohsiung City 81354</P>
+            <P id = 'text2' style = 'left:21%;top:54%;'>Taiwan</P>
+
+            <P id = 'text2' style = 'left:46%;top:15%;'><B>Contact</B></P>
+            <P id = 'text2' style = 'left:46%;top:28%;'>Tel: +886 7 586 3300</P>
+            <P id = 'text2' style = 'left:46%;top:41%;'>Email: info@kas.tw</P>
+            <P id = 'text2' style = 'left:46%;top:54%;'>Transcripts:</P>
+            <P id = 'text2' style = 'left:46%;top:67%;'>transcripts@kas.tw</P>
+
+            <P id = 'text2' style = 'left:68%;top:15%;'><B>Useful Links</B></P>
+            <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/redcross.html" id = 'text2' style = 'left:68%;top:33%;'>Red Cross</a>
+            <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/fooddonation.html" id = 'text2' style = 'left:68%;top:47%;'>Food Donation</a>
+            <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/charityart.html" id = 'text2' style = 'left:68%;top:61%;'>Charity Art</a>
+            <a href = "file:///Users/oliverchen/Desktop/CS%20Client%20project/zonta.html" id = 'text2' style = 'left:68%;top:75%;'>Zonta</a>
+        </DIV>
+
+
+    </BODY>
+</HTML>
